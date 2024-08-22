@@ -1,0 +1,26 @@
+@import url(./reset.css);
+
+
+/* **************
+    MAIN
+****************************** */
+.grid-group {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.main-card {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+}
+
+.main-card .card {
+    display: block;
+    color: var(--text-color);
+}
+
+.main-card .card i {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}

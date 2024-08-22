@@ -1,0 +1,230 @@
+/*
+    PROJECTO PADRÃO PARA CONSTRUÇÃO DE PAGINAS WEB
+ */
+
+
+/* **************
+    WEB FONTS
+********************* */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+/* **************
+    VARIAVEIS E CONFIGURAÇÃO
+****************************** */
+
+:root
+{
+    /* color */
+    --primary-color: #4891ff;
+    --dark-color: hsl(0, 0%, 7%);
+    --first-color: hsl(349, 83%, 58%);
+    --second-color: hsl(45, 100%, 58%);
+    --light-color: hsl(0, 0%, 100%);
+    --dark-color: hsl(0, 0%, 11%);
+    --title-color: hsl(223, 12%, 14%);
+    --text-color: hsl(223, 12%, 20%);
+    --body-color: hsl(228, 45%, 98%);
+
+    /* fonts */
+    --body-font: "Poppins", sans-serif;
+    --normal-font-size: .938rem;
+    --samall-font-size: .813rem;
+    --smailler-font-size: .75rem;
+
+    /* tipograph */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+    /* fixed heigt & width */
+    --header-height: 3.5rem;
+
+    /* radius */
+    --border-radius: 10px;
+
+    /* animation */
+    --transition-3s: 0.3s;
+    --transition-5s: 0.5s;
+}
+
+/* Tamanho para Desktop */
+@media screean and (min-width: 1024px)
+{
+    :root
+    {
+         /* fonts */
+     --body-font: "Poppins", sans-serif;
+     --normal-font-size: .1rem;
+     --samall-font-size: .875rem;
+     --smailler-font-size: .813rem;
+    }
+}
+
+
+/* **************
+    BASE
+****************************** */
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body, input, button
+{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body
+{
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+input, button
+{
+    border: none;
+    outline: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+img
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* **************
+    UTILITY CLASSES REUTILISAVEIS
+****************************** */
+.container
+{
+    max-width: 1120px;
+    margin-inline: 1.5rem;
+}
+
+.container-sm
+{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.flex
+{
+    display: flex;
+    gap: 1rem;
+}
+
+.grid
+{
+    display: grid;
+    gap: 1rem;
+}
+
+.card
+{
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 13px 20px;
+    font-weight: var(--font-medium);
+    text-align: center;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition-5s);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.btn-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.text-xxl {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 40px 0 20px;
+}
+
+.text-xl {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-md {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center {
+    text-align: center;
+}
