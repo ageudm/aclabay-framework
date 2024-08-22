@@ -2,11 +2,17 @@
 
 
 /* **************
-    MAIN
+            PAGINA INICIAL
 ****************************** */
+.wrapper .text-center {
+    text-transform: uppercase;
+    margin-top: var(--header-height);
+}
+
 .grid-group {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    padding: 2rem 0;
 }
 
 .main-card {
@@ -23,4 +29,29 @@
     display: block;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 960px) {
+    .grid-group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .grid-group {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wrapper .text-xxl {
+        font-size: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .grid-group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 }

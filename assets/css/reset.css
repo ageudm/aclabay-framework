@@ -22,7 +22,6 @@
     --first-color: hsl(349, 83%, 58%);
     --second-color: hsl(45, 100%, 58%);
     --light-color: hsl(0, 0%, 100%);
-    --dark-color: hsl(0, 0%, 11%);
     --title-color: hsl(223, 12%, 14%);
     --text-color: hsl(223, 12%, 20%);
     --body-color: hsl(228, 45%, 98%);
@@ -126,7 +125,9 @@ img
 .container
 {
     max-width: 1120px;
-    margin-inline: 1.5rem;
+    /* margin-inline: 1.5rem; */
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 .container-sm
