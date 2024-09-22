@@ -21,6 +21,10 @@
     /* margin-inline: 1.5rem; */
 }
 
+.section {
+    padding: 5rem 0;
+  }
+
 .flex
 {
     display: flex;
